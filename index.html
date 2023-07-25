@@ -13,6 +13,7 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/020302b772.js" crossorigin="anonymous"></script>
 
     <!-- Tailwind style-->
     <script>
@@ -37,15 +38,28 @@
     <header class="container mx-auto">
       <!-- Nav bar section -->
       <section class="my-8">
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-[#F85559] rounded-full">
           <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            <ul class="flex gap-5 ml-8">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Shop</li>
+              <li>All Fruits</li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <img class="absolute ml-8" src="./images/logo.png" alt="">
+            <a class=" ml-24 normal-case text-xl relative">Fruit Burst</a>
+            
+             
           </div>
           <div class="flex-none gap-2">
-            <div class="form-control">
-              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            <div class="form-control p-2 relative w-80">
+              <input type="text" placeholder="Search here" class="input input-bordered rounded-full w-24 md:w-auto" />
             </div>
-            
+            <div class="absolute mx-72 text-xl">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
           </div>
         </div>
       </section>
